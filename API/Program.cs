@@ -25,6 +25,9 @@ var connectionString = builder.Configuration.GetConnectionString("ServerDB");
 builder.Services.AddScoped<IPizzaRepository, PizzaSqlRepository>(serviceProvider => 
     new PizzaSqlRepository(connectionString));
 
+    builder.Services.AddScoped<IIngredientesRepository, IngredienteSqlRepository>(serviceProvider => 
+    new IngredienteSqlRepository(connectionString));
+
 
 /* builder.Services.AddScoped<IngredienteService>();
 builder.Services.AddSingleton<IIngredientesRepository, IngredientesRepository>(); */

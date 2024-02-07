@@ -6,8 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaExample.Models", "Models\PizzaExample.Models.csproj", "{4EF912C6-4865-424C-9A8E-490D9D017384}"
 EndProject
 
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaExample.Business", "Business\PizzaExample.Business.csproj", "{E7D11DB0-2A93-46A8-9028-71ACE610A1C8}"
-EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaExample.API", "API\PizzaExample.API.csproj", "{30289A12-9F84-41D0-B6AA-2A846D9611B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaExample.Data", "Data\PizzaExample.Data.csproj", "{6731E6CB-1C62-4B9E-AB06-78DDAC38BE22}"

@@ -41,8 +41,8 @@ public class IngredientesController : ControllerBase
         if (id != ingrediente.Id)
             return BadRequest();
 
-        var existingPizza = _ingredienteService.Get(id);
-        if (existingPizza is null)
+        var existingIngredient = _ingredienteService.Get(id);
+        if (existingIngredient is null)
             return NotFound();
 
         _ingredienteService.Update(ingrediente);

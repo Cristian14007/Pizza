@@ -6,6 +6,6 @@ public class Ingrediente
     public string? Name { get; set; }
     public string? Origen { get; set; }
 
-    public int PizzaId { get; set; }
-    public int? Calorias { get; set; }
+    //public int PizzaId { get; set; }
+    //public int? Calorias { get; set; }
 }

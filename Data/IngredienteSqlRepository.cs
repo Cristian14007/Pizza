@@ -6,45 +6,45 @@ using System.Data;
 namespace PizzaExample.Data
 {
 
-    public class PizzaSqlRepository : IPizzaRepository
+    public class IngredienteSqlRepository : IIngredientesRepository
     {
 
         private readonly string _connectionString;
 
-        public PizzaSqlRepository(string connectionString)
+        public IngredienteSqlRepository(string connectionString)
         {
 
             _connectionString = connectionString;
         }
 
-        public  List<Pizza> GetAll()
+        public  List<Ingrediente> GetAll()
         {
-           List<Pizza> pizzas  = new List<Pizza>();
+           List<Ingrediente> ingredientes  = new List<Ingrediente>();
 
             using (var connection = new SqlConnection(_connectionString))
             {
 
                 connection.Open();
 
-                var sqlString = "SELECT Id, Name, IsGlutenFree FROM Pizza";
+                var sqlString = "SELECT Id, Nombre, Origen FROM Ingredientes";
                 var command = new SqlCommand(sqlString, connection);
 
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        var pizza = new Pizza
+                        var ingrediente = new Ingrediente
                         {
                             Id = Convert.ToInt32(reader["Id"]),
-                            Name = reader["Name"].ToString(),
-                            IsGlutenFree = Convert.ToBoolean(reader["IsGlutenFree"])
+                            Nombre = reader["Nombre"].ToString(),
+                            Origen = reader["Origen"].ToString()
                         };
-                    pizzas.Add(pizza);
+                    ingredientes.Add(ingrediente);
                     } 
                 }
             }
 
-            return pizzas;
+            return ingredientes;
         }
 
         public void Add(Pizza pizza)

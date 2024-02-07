@@ -6,5 +6,5 @@ public class Pizza
     public string? Name { get; set; }
     public bool IsGlutenFree { get; set; }
 
-    public List<Ingrediente> Ingredientes{get; set;}
+    //public List<Ingrediente> Ingredientes{get; set;}
 }
