@@ -1,8 +1,8 @@
 using PizzaExample.Models;
 
-namespace PizzaExample.Data
+namespace PizzaExample.Business
 {
-    public interface IIngredientesRepository
+    public interface IIngredienteService
     {
         List<Ingrediente> GetAll();
         void Add(Ingrediente ingrediente);

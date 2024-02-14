@@ -5,6 +5,7 @@ COPY *.sln .
 COPY ../Models/*.csproj Models/
 COPY ../Data/*.csproj Data/
 COPY ../API/*.csproj API/
+COPY ../Business/*.csproj Business/
 RUN dotnet restore PizzaExample.sln
 
 COPY . .

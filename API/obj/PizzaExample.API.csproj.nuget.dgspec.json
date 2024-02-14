@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\API\\PizzaExample.API.csproj": {}
+    "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\API\\PizzaExample.API.csproj": {}
   },
   "projects": {
-    "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\API\\PizzaExample.API.csproj": {
+    "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\API\\PizzaExample.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\API\\PizzaExample.API.csproj",
+        "projectUniqueName": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\API\\PizzaExample.API.csproj",
         "projectName": "PizzaExample.API",
-        "projectPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\API\\PizzaExample.API.csproj",
+        "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\API\\PizzaExample.API.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\API\\obj\\",
+        "outputPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,14 +33,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Business\\PizzaExample.Business.csproj": {
-                "projectPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Business\\PizzaExample.Business.csproj"
+              "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Business\\PizzaExample.Business.csproj": {
+                "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Business\\PizzaExample.Business.csproj"
               },
-              "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Data\\PizzaExample.Data.csproj": {
-                "projectPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Data\\PizzaExample.Data.csproj"
+              "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Data\\PizzaExample.Data.csproj": {
+                "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Data\\PizzaExample.Data.csproj"
               },
-              "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Models\\PizzaExample.Models.csproj": {
-                "projectPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Models\\PizzaExample.Models.csproj"
+              "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj": {
+                "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj"
               }
             }
           }
@@ -55,6 +55,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -83,14 +89,14 @@
         }
       }
     },
-    "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Business\\PizzaExample.Business.csproj": {
+    "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Business\\PizzaExample.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Business\\PizzaExample.Business.csproj",
+        "projectUniqueName": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Business\\PizzaExample.Business.csproj",
         "projectName": "PizzaExample.Business",
-        "projectPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Business\\PizzaExample.Business.csproj",
+        "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Business\\PizzaExample.Business.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Business\\obj\\",
+        "outputPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -111,11 +117,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Data\\PizzaExample.Data.csproj": {
-                "projectPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Data\\PizzaExample.Data.csproj"
+              "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Data\\PizzaExample.Data.csproj": {
+                "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Data\\PizzaExample.Data.csproj"
               },
-              "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Models\\PizzaExample.Models.csproj": {
-                "projectPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Models\\PizzaExample.Models.csproj"
+              "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj": {
+                "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj"
               }
             }
           }
@@ -149,14 +155,14 @@
         }
       }
     },
-    "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Data\\PizzaExample.Data.csproj": {
+    "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Data\\PizzaExample.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Data\\PizzaExample.Data.csproj",
+        "projectUniqueName": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Data\\PizzaExample.Data.csproj",
         "projectName": "PizzaExample.Data",
-        "projectPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Data\\PizzaExample.Data.csproj",
+        "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Data\\PizzaExample.Data.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Data\\obj\\",
+        "outputPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -177,8 +183,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Models\\PizzaExample.Models.csproj": {
-                "projectPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Models\\PizzaExample.Models.csproj"
+              "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj": {
+                "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj"
               }
             }
           }
@@ -193,9 +199,15 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Newtonsoft.Json": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[13.0.3, )"
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -222,14 +234,14 @@
         }
       }
     },
-    "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Models\\PizzaExample.Models.csproj": {
+    "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Models\\PizzaExample.Models.csproj",
+        "projectUniqueName": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj",
         "projectName": "PizzaExample.Models",
-        "projectPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Models\\PizzaExample.Models.csproj",
+        "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "d:\\CristianEzquerra\\2aEV\\alex\\PizzaExample\\Models\\obj\\",
+        "outputPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

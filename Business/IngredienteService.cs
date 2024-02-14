@@ -1,11 +1,12 @@
 
 using PizzaExample.Models;
 using PizzaExample.Data;
+using PizzaExample.Business;
 
 
 namespace PizzaExample.Business
 {
-    public class IngredienteService
+    public class IngredienteService : IIngredienteService
     {
 
         private readonly IIngredientesRepository _ingredienteRepository;

@@ -26,7 +26,7 @@ namespace PizzaExample.Data
 
                 connection.Open();
 
-                var sqlString = "SELECT Id, Nombre, Origen FROM Ingredientes";
+                var sqlString = "SELECT Id, Name, Origen FROM Ingredientes";
                 var command = new SqlCommand(sqlString, connection);
 
                 using (var reader = command.ExecuteReader())
@@ -36,7 +36,7 @@ namespace PizzaExample.Data
                         var ingrediente = new Ingrediente
                         {
                             Id = Convert.ToInt32(reader["Id"]),
-                            Nombre = reader["Nombre"].ToString(),
+                            Name = reader["Name"].ToString(),
                             Origen = reader["Origen"].ToString()
                         };
                     ingredientes.Add(ingrediente);
@@ -47,53 +47,53 @@ namespace PizzaExample.Data
             return ingredientes;
         }
 
-        public void Add(Pizza pizza)
+        public void Add(Ingrediente ingrediente)
         {
             using (var connection = new SqlConnection(_connectionString))
     {
         connection.Open();
 
-        var sqlString = "INSERT INTO Pizza (Id, Name, IsGlutenFree) VALUES('@Id', '@Name', '@IsGlutenFree')";
+        var sqlString = "INSERT INTO Ingredientes (Id, Name, Origen) VALUES('@Id', '@Name', '@Origen')";
         var command = new SqlCommand(sqlString, connection);
 
         // Utilizamos parámetros para evitar la inyección de SQL
-        command.Parameters.AddWithValue("@Id", pizza.Id);
-        command.Parameters.AddWithValue("@Name", pizza.Name);
-        command.Parameters.AddWithValue("@IsGlutenFree", pizza.IsGlutenFree);
+        command.Parameters.AddWithValue("@Id", ingrediente.Id);
+        command.Parameters.AddWithValue("@Name", ingrediente.Name);
+        command.Parameters.AddWithValue("@Origen", ingrediente.Origen);
 
     }
         }
 
-        public Pizza Get(int id)
+        public Ingrediente Get(int id)
         {
-            var pizza = new Pizza();
+            var ingrediente = new Ingrediente();
 
             using (var connection = new SqlConnection(_connectionString))
             {
 
                 connection.Open();
 
-                var sqlString = "SELECT Id, Name, IsGlutenFree FROM Pizza WHERE Id=" + id;
+                var sqlString = "SELECT Id, Name, Origen FROM Ingredientes WHERE Id=" + id;
                 var command = new SqlCommand(sqlString, connection);
 
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        pizza = new Pizza
+                        ingrediente = new Ingrediente
                         {
                             Id = Convert.ToInt32(reader["Id"]),
                             Name = reader["Name"].ToString(),
-                            IsGlutenFree = Convert.ToBoolean(reader["IsGlutenFree"])
+                            Origen = reader["Origen"].ToString()
                         };
                     }
                 }
             }
 
-            return pizza;
+            return ingrediente;
         }
 
-        public void Update(Pizza pizza)
+        public void Update(Ingrediente ingrediente)
 {
     /* using (var connection = new SqlConnection(_connectionString))
     {
@@ -128,7 +128,7 @@ namespace PizzaExample.Data
     {
         connection.Open();
 
-        var sqlString = "DELETE FROM Pizza WHERE Id=" + id;
+        var sqlString = "DELETE FROM Ingredientes WHERE Id=" + id;
         var command = new SqlCommand(sqlString, connection);
 
         command.ExecuteNonQuery();

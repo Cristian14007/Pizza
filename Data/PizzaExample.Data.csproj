@@ -4,18 +4,22 @@
     <ProjectReference Include="..\Models\PizzaExample.Models.csproj" />
   </ItemGroup>
 
-    <ItemGroup>
-      <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    </ItemGroup>
-
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 
   </PropertyGroup>
+
+  <ItemGroup>
+   <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+   <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+   <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+    <PrivateAssets>all</PrivateAssets>
+    <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+</PackageReference>
+
+  </ItemGroup>
 
 </Project>

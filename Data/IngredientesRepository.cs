@@ -14,8 +14,8 @@ namespace PizzaExample.Data
         {
             Ingredientes = new List<Ingrediente>
             {
-                new Ingrediente { Id = 1, Name = "Pepperoni", Origen = "Animal", Calorias=20},
-                new Ingrediente { Id = 2, Name = "Olivas", Origen = "Vegetal", Calorias=13 }
+                new Ingrediente { Id = 1, Name = "Pepperoni", Origen = "Animal"},
+                new Ingrediente { Id = 2, Name = "Olivas", Origen = "Vegetal"}
             };
         }
 
@@ -53,7 +53,7 @@ namespace PizzaExample.Data
             }
         }
 
-        public List<Ingrediente> GetIngredientesByPizzaId(int pizzaId)
+        /* public List<Ingrediente> GetIngredientesByPizzaId(int pizzaId)
         {
             // Puedes agregar lógica aquí para obtener los ingredientes asociados a una pizza específica
             // Devuelve una lista de ingredientes relacionados con la pizzaId
@@ -77,6 +77,6 @@ namespace PizzaExample.Data
             {
                 AddIngredienteToPizza(ingrediente, pizzaId);
             }
-        }
+        } */
     }
 }

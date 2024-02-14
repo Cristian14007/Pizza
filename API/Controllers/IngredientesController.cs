@@ -8,8 +8,8 @@ namespace PizzaExample.Controllers;
 [Route("[controller]")]
 public class IngredientesController : ControllerBase
 {
-    private readonly IngredienteService _ingredienteService;
-    public IngredientesController(IngredienteService ingredienteService)
+    private readonly IIngredienteService _ingredienteService;
+    public IngredientesController(IIngredienteService ingredienteService)
     {
         _ingredienteService = ingredienteService;
     }

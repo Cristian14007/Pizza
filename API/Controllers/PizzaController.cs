@@ -8,8 +8,8 @@ namespace PizzaExample.Controllers;
 [Route("[controller]")]
 public class PizzaController : ControllerBase
 {
-    private readonly PizzaService _pizzaService;
-    public PizzaController(PizzaService pizzaService)
+    private readonly IPizzaService _pizzaService;
+    public PizzaController(IPizzaService pizzaService)
     {
         _pizzaService = pizzaService;
     }
@@ -18,7 +18,8 @@ public class PizzaController : ControllerBase
 public ActionResult<List<Pizza>> GetAll() =>
     _pizzaService.GetAll();
 
-    [HttpGet("{id}")]
+    [HttpGet]
+    [Route("Id")]
 public ActionResult<Pizza> Get(int id)
 {
     var pizza = _pizzaService.Get(id);
