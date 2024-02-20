@@ -32,7 +32,7 @@ namespace PizzaExample.Data{
 
         public Ingrediente Get(int id)
         {
-            return _context.Ingredientes.FirstOrDefault(p => p.Id == id);
+            return _context.Ingredientes.FirstOrDefault(p => p.IngredienteId == id);
         }
 
         public List<Ingrediente> GetAll()

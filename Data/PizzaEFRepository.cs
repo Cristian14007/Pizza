@@ -32,12 +32,28 @@ namespace PizzaExample.Data{
 
         public Pizza Get(int id)
         {
-            return _context.Pizzas.FirstOrDefault(p => p.Id == id);
+            return _context.Pizzas.FirstOrDefault(p => p.PizzaId == id);
         }
 
-        public List<Pizza> GetAll()
+        public List<PizzaDTO> GetAll()
         {
-            return _context.Pizzas.ToList();
+            var pizzas = _context.Pizzas
+        .Include(p => p.PizzaIngredientes)
+            .ThenInclude(pi => pi.Ingrediente)
+        .ToList();
+
+    var pizzasDTO = pizzas.Select(p => new PizzaDTO
+    {
+        PizzaId = p.PizzaId,
+        Nombre = p.Nombre,
+        Ingredientes = p.PizzaIngredientes.Select(pi => new IngredienteDTO
+        {
+            IngredienteId = pi.Ingrediente.IngredienteId,
+            Nombre = pi.Ingrediente.Nombre
+        }).ToList()
+    }).ToList();
+
+    return pizzasDTO;
         }
 
         public void Update(Pizza pizza)

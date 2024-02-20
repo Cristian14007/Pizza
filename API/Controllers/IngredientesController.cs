@@ -33,12 +33,12 @@ public class IngredientesController : ControllerBase
     public IActionResult Create(Ingrediente ingrediente)
     {
         _ingredienteService.Add(ingrediente);
-        return CreatedAtAction(nameof(Get), new { id = ingrediente.Id }, ingrediente);
+        return CreatedAtAction(nameof(Get), new { id = ingrediente.IngredienteId }, ingrediente);
     }
     [HttpPut("{id}")]
     public IActionResult Update(int id, Ingrediente ingrediente)
     {
-        if (id != ingrediente.Id)
+        if (id != ingrediente.IngredienteId)
             return BadRequest();
 
         var existingIngredient = _ingredienteService.Get(id);

@@ -5,7 +5,11 @@ using System.Text;
 
 public class Ingrediente
 {
-    [Key]
+
+    public int IngredienteId { get; set; }
+    public string Nombre { get; set; }
+    public List<PizzaIngrediente> PizzaIngredientes { get; set; }
+    /* [Key]
     public int Id { get; set; }
 
     [Required]
@@ -17,7 +21,7 @@ public class Ingrediente
     //public int PizzaId { get; set; }
 
     [Required]
-    public int? Calorias { get; set; }
+    public int? Calorias { get; set; } */
 
 
     // EF Core requiere un constructor sin parámetros
@@ -25,11 +29,10 @@ public class Ingrediente
 
     }
 
-    public Ingrediente(int id, string name, string origen, int calorias){
+    public Ingrediente(int ingredienteid, string nombre){
 
-        Id = id;
-        Name = name;
-        Origen = origen;
-        Calorias = calorias;
+        IngredienteId = ingredienteid;
+        Nombre = nombre;
+        
     }
 }

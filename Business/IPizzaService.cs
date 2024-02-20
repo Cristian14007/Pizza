@@ -4,7 +4,7 @@ namespace PizzaExample.Business
 {
     public interface IPizzaService
     {
-        List<Pizza> GetAll();
+        List<PizzaDTO> GetAll();
         void Add(Pizza pizza);
         Pizza Get(int id);
         void Update(Pizza pizza);

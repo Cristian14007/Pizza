@@ -15,7 +15,7 @@ namespace PizzaExample.Business
             _pizzaRepository = pizzaRepository;
             //_ingredientesRepository = ingredientesRepository;
         }
-        public  List<Pizza> GetAll()
+        public  List<PizzaDTO> GetAll()
         {
             var pizzas = _pizzaRepository.GetAll();
             /* foreach (var pizza in pizzas)

@@ -6,14 +6,18 @@ using System.Text;
 public class Pizza
 {
 
-    [Key]
-    public int Id { get; set; }
+    public int PizzaId { get; set; }
+    public string Nombre { get; set; }
+    public List<PizzaIngrediente> PizzaIngredientes { get; set; }
+
+    /* [Key]
+    public int PizzaId { get; set; }
 
     [Required]
     public string? Name { get; set; }
 
     [Required]
-    public bool IsGlutenFree { get; set; }
+    public bool IsGlutenFree { get; set; } */
 
     //public List<Ingrediente> Ingredientes{get; set;}
 
@@ -22,11 +26,11 @@ public class Pizza
 
     }
 
-    public Pizza(int id, string name, bool isglutenfree){
+    public Pizza(int pizzaid, string nombre){
 
-        Id = id;
-        Name = name;
-        IsGlutenFree = isglutenfree;
+        PizzaId = pizzaid;
+        Nombre = nombre;
+        
     }
 
 }

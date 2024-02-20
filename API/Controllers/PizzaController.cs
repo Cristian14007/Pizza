@@ -15,7 +15,7 @@ public class PizzaController : ControllerBase
     }
 
     [HttpGet]
-public ActionResult<List<Pizza>> GetAll() =>
+public ActionResult<List<PizzaDTO>> GetAll() =>
     _pizzaService.GetAll();
 
     [HttpGet]
@@ -34,12 +34,12 @@ public ActionResult<Pizza> Get(int id)
 public IActionResult Create(Pizza pizza)
 {            
     _pizzaService.Add(pizza);
-    return CreatedAtAction(nameof(Get), new { id = pizza.Id }, pizza);
+    return CreatedAtAction(nameof(Get), new { id = pizza.PizzaId }, pizza);
 }
 [HttpPut("{id}")]
 public IActionResult Update(int id, Pizza pizza)
 {
-    if (id != pizza.Id)
+    if (id != pizza.PizzaId)
         return BadRequest();
            
     var existingPizza = _pizzaService.Get(id);

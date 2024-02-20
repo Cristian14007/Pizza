@@ -1,4 +1,4 @@
-using PizzaExample.Models;
+/* using PizzaExample.Models;
 using System.Text.Json;
 using System.Data.SqlClient;
 using System.Data;
@@ -95,7 +95,7 @@ namespace PizzaExample.Data
 
         public void Update(Pizza pizza)
 {
-    /* using (var connection = new SqlConnection(_connectionString))
+    using (var connection = new SqlConnection(_connectionString))
     {
         connection.Open();
 
@@ -119,7 +119,7 @@ namespace PizzaExample.Data
         {
             Console.WriteLine("No se pudo encontrar la pizza con el ID especificado.");
         }
-    } */
+    }
 }
 
         public void Delete(int id)
@@ -142,4 +142,4 @@ namespace PizzaExample.Data
 
     }
 
-}
+} */

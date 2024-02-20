@@ -1,4 +1,4 @@
-
+/* 
 using PizzaExample.Models;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,7 +53,7 @@ namespace PizzaExample.Data
             }
         }
 
-        /* public List<Ingrediente> GetIngredientesByPizzaId(int pizzaId)
+        public List<Ingrediente> GetIngredientesByPizzaId(int pizzaId)
         {
             // Puedes agregar lógica aquí para obtener los ingredientes asociados a una pizza específica
             // Devuelve una lista de ingredientes relacionados con la pizzaId
@@ -77,6 +77,7 @@ namespace PizzaExample.Data
             {
                 AddIngredienteToPizza(ingrediente, pizzaId);
             }
-        } */
+        }
     }
 }
+ */

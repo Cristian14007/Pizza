@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj": {}
+    "D:\\cristian\\PizzaExample\\Models\\PizzaExample.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj": {
+    "D:\\cristian\\PizzaExample\\Models\\PizzaExample.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj",
+        "projectUniqueName": "D:\\cristian\\PizzaExample\\Models\\PizzaExample.Models.csproj",
         "projectName": "PizzaExample.Models",
-        "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\PizzaExample.Models.csproj",
+        "projectPath": "D:\\cristian\\PizzaExample\\Models\\PizzaExample.Models.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\S2-PC00\\Desktop\\PizzaExample\\Models\\obj\\",
+        "outputPath": "D:\\cristian\\PizzaExample\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
